@@ -1,0 +1,23 @@
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  & svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.link {
+  color: var(--host-dark-80);
+
+  &:hover {
+    color: var(--host-dark-80);
+  }
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+}

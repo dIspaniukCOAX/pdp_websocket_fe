@@ -1,0 +1,501 @@
+{
+  "steps": {
+    "registration": "Registration"
+  },
+  "location-settings": {
+    "add-range": "Add number of guest",
+    "basic-settings": "Basic settings",
+    "hotel-name": "Name of the hotel or apartments",
+    "hotel-name-placeholder": "e.g. Cozy Cottage",
+    "google-location": "Address from Google Maps",
+    "google-location-label": "How to get an address?",
+    "continue": "Continue",
+    "upload-title": "Upload hotel photo",
+    "price-and-conditions-title": "Price and conditions",
+    "change-password": "Change password",
+    "number-of-guests": "Number of guests",
+    "dynamic-prices": "Dynamic prices depending on the number of guests",
+    "info-description": "You will be able to set different prices for specific days and months after registration.",
+    "hrn": "hrn",
+    "price-per-night": "Price per night",
+    "success-upload": "File uploaded successfully",
+    "failed-upload": "File upload failed",
+    "limited-amount-upload": "Unable to upload more than 1 photos",
+    "limited-weight-upload": "File must be smaller than 5 MB!",
+    "subtitle-upload": "JPG, PNG / Max 1 photo / Min 340px x 600px / Max 5 MB",
+    "failed-compress-image": "Failed to compress image",
+    "from": "from",
+    "to": "to",
+    "go-back": "Go back",
+    "close": "Save",
+    "delete": "Delete",
+    "conditions": "Conditions",
+    "placeholder": {
+      "price": "Price per night",
+      "number-of-guests": "Max number of guests"
+    }
+  },
+  "error": {
+    "number-of-guests": {
+      "pattern": "Only natural numbers are allowed",
+      "required": "Number of guests is required"
+    },
+    "price-per-night": {
+      "required": "Price per night is required",
+      "pattern": "Only natural numbers are allowed"
+    },
+    "email": {
+      "optionality": "Email is required",
+      "required": "Email is required",
+      "email": "Email is invalid"
+    },
+    "password": {
+      "min": "Password must have at least 8 characters",
+      "matches": "Your password should contain both numbers and letters",
+      "required": "Password is required",
+      "optionality": "Password is required"
+    },
+    "repeatPassword": {
+      "oneOf": "The specified passwords do not match",
+      "required": "The field is required",
+      "optionality": "The field is required"
+    },
+    "fullName": {
+      "optionality": "Full name is required",
+      "required": "Full name is required"
+    },
+    "phoneNumber": {
+      "optionality": "Phone number is required",
+      "required": "Phone number is required",
+      "matches": "Must contain a Ukrainian phone number"
+    },
+    "publicLabel": {
+      "required": "The name of the hotel or apartments is required",
+      "optionality": "The name of the hotel or apartments is required"
+    },
+    "images": {
+      "required": "At least one photo is required",
+      "optionality": "At least one photo is required"
+    },
+    "name": {
+      "required": "Name of season is required",
+      "optionality": "Name of season is required",
+      "nullable": "Name of season is required"
+    },
+    "startDate": {
+      "required": "Start date is required",
+      "optionality": "Start date is required",
+      "nullable": "Start date is required"
+    },
+    "endDate": {
+      "required": "End date is required",
+      "optionality": "End date is required",
+      "nullable": "End date is required"
+    },
+    "googleMapAddress": {
+      "required": "The address from Google Maps is required",
+      "optionality": "The address from Google Maps is required",
+      "matches": "Please enter a valid address from Google Maps"
+    },
+    "checkinDate": {
+      "required": "The field is required",
+      "optionality": "The field is required",
+      "nullable": "The field is required"
+    },
+    "checkoutDate": {
+      "required": "The field is required",
+      "optionality": "The field is required",
+      "nullable": "The field is required"
+    },
+    "maxCountOfGuests": {
+      "required": "The maximum number of guests is required",
+      "optionality": "The maximum number of guests is required",
+      "typeError": "The maximum number of guests must be a number",
+      "min": "The maximum number of guests must be greater than 0"
+    },
+    "guest": {
+      "fullName": {
+        "required": "Full name is required",
+        "optionality": "Full name is required"
+      },
+      "email": {
+        "required": "Email is required",
+        "optionality": "Email is required",
+        "email": "Email is invalid"
+      },
+      "phoneNumber": {
+        "required": "Phone number is required",
+        "optionality": "Phone number is required",
+        "matches": "Must contain a Ukrainian phone number"
+      }
+    },
+    "totalGuests": {
+      "required": "Number of guests is required",
+      "optionality": "Number of guests is required",
+      "pattern": "Only natural numbers are allowed",
+      "min": "The number of guests must be greater than 0",
+      "typeError": "The number of guests must be a number"
+    },
+    "totalPrice": {
+      "required": "The total price of accommodation is mandatory",
+      "optionality": "The total price of accommodation is mandatory",
+      "pattern": "The total price of accommodation must correspond to the specified format",
+      "typeError": "The total price of accommodation must be a number",
+      "min": "The total price of accommodation must be greater than 0"
+    }
+  },
+  "auth-form": {
+    "password": "Password",
+    "name": "Full name",
+    "phone": "Phone number",
+    "google-sign-in": "Sign in with Google",
+    "google-sign-up": "Sign up with Google",
+    "or": "Or",
+    "email-label": "Email",
+    "email-placeholder": "Enter your email",
+    "password-placeholder": "Enter your password",
+    "fullName-placeholder": "Enter your full name",
+    "phoneNumber-placeholder": "Enter your phone number",
+    "forgot-password": "Forgot password?",
+    "agreement": "I confirm that I have familiarized myself with <a>{{privacy}}</a> and I agree with <a>{{conditionUse}}</a>",
+    "conditionUse": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "min-8-char": "Must be at least 8 characters",
+    "numbers-and-chars": "Must contain both numbers and letters",
+    "phone-number": "Phone number must be a valid Ukrainian format",
+    "agreement-error": "You must agree with the Privacy Policy"
+  },
+  "settings": {
+    "title": "Settings",
+    "info-location": "Location",
+    "price-setup": "Price setup",
+    "additional-services": "Additional services",
+    "booking-rules": "Booking rules",
+    "user-profile": "User profile",
+    "change-password": "Change password",
+    "terms-and-conditions": "Terms of Use",
+    "privacy-policy": "Privacy Policy",
+    "logout": "Logout"
+  },
+  "price-setup": {
+    "title": "Price setup",
+    "content-title": "Price of seasons",
+    "empty-content": "Create seasons and seasonal prices",
+    "add-season": "Add season",
+    "form": {
+      "title": "Season Settings",
+      "season-name": "Season name",
+      "season-start": "Start (inclusive)",
+      "season-end": "End (inclusive)",
+      "tariffs": "Tariffs",
+      "empty-tariffs": "Create separate rates for different days of the week and different number of guests in the reservation",
+      "add-tariff": "Add tariff",
+      "use-changes": "Use changes",
+      "cancel-changes": "Cancel changes"
+    }
+  },
+  "hotel-setup": "Location setup",
+  "sign-in": {
+    "title": "Sign in",
+    "btn-text": "Sign In"
+  },
+  "navigation": {
+    "calendar": "Calendar",
+    "bookings": "Bookings",
+    "guests": "Guests",
+    "settings": "Settings"
+  },
+  "development": {
+    "title": "Oops, this page is still under development 😉"
+  },
+  "reset-password": {
+    "title": "Reset password",
+    "description": "Please enter your email address.\n You will receive an email with a link to a password change form.",
+    "btn-text": "Reset password",
+    "email-placeholder": "example@gmail.com",
+    "back-home": "Back to sign in",
+    "send-email-success": "The link has been sent to the mail",
+    "send-email-text": "We have sent a password reset link to your email address: <emailLink>{{ email }}</emailLink>",
+    "step-title": "What to do next?",
+    "step-check-email": "Check your email",
+    "step-click-link": "Follow the link",
+    "step-change-password": "Create a new password"
+  },
+  "set-password": {
+    "title": "Set new password",
+    "new-password": "New password",
+    "confirm-password": "Confirm new password",
+    "btn-text": "Set a new password",
+    "decline": "Decline",
+    "main": "Main",
+    "invalid-link-title": "Invalid link",
+    "invalid-link-description": "We're sorry, but the password reset link you followed is no longer active or is invalid.",
+    "step-invalid-title": "This could happen for several reasons:",
+    "step-invalid-expired": "The link has expired.",
+    "step-invalid-used": "The link has already been used.",
+    "step-invalid-withdrawn": "The request to change the password has been withdrawn.",
+    "request-new-link": "Request a new link",
+    "success-title": "Password changed successfully",
+    "success-description": "You can now use your new password to log in.",
+    "step-success-title": "Tips for keeping your account secure:",
+    "step-success-share": "Do not share your password with others.",
+    "step-success-strong": "Use strong passwords.",
+    "step-success-update": "Update your password regularly."
+  },
+  "home": "Home",
+  "sign-up": "Registration",
+  "sign-up_btn-text": "Registration",
+  "layout-pages": {
+    "settings": "Settings",
+    "exit": "Exit",
+    "search": "Search for reservations or guests"
+  },
+  "sidebar-menu": {
+    "dashboard": "Calendar",
+    "bookings": "Bookings",
+    "guests": "Guests",
+    "reports": "Reports"
+  },
+  "big-calendar": {
+    "create": "Create"
+  },
+  "booking": {
+    "title": "Booking",
+    "notes-placeholder": "Enter notes that will help you remember some details about the booking",
+    "drawer-title": "Calendar management",
+    "save": "Save",
+    "decline": "Decline",
+    "check-in-date": "Check-in date",
+    "check-out-date": "Check-out date",
+    "notes": "Notes",
+    "guests-amount": "Number of guests",
+    "price-per-night": "Price per night",
+    "empty-content": "Unfortunately, the list is empty... \n Start searching for reservations now!",
+    "empty-content-tab": "Unfortunately, the list is empty...",
+    "not-approved": "Unconfirmed ({{ count }})",
+    "future": "The future ({{ count }})",
+    "archive": "Archive ({{ count }})",
+    "amount": "Amount",
+    "filter": {
+      "title": "Filters",
+      "sort": "Sorting",
+      "clear": "Clean up",
+      "apply": "Apply",
+      "nights": "Nights",
+      "guests": "Guests",
+      "all": "All",
+      "date-asc": "Date of residence: nearest",
+      "date-desc": "Date of residence: the earliest",
+      "created-at-asc": "Creation date: coming soon",
+      "created-at-desc": "Creation date: earliest",
+      "total-price-desc": "Booking amount: the largest",
+      "total-price-asc": "Booking amount: the smallest"
+    },
+    "create": {
+      "title": "New booking",
+      "continue": "Continue",
+      "cancel": "Cancel",
+      "guest-info-title": "Number of guests and cost",
+      "guest-contact-detail-title": "Contact details of the guest",
+      "detail-title": "Booking details",
+      "form-name": "Name",
+      "form-phone": "Phone",
+      "form-email": "Email",
+      "form-add-email": "Add Email",
+      "form-note": "Notes",
+      "form-add-note": "Add Notes",
+      "form-remove-fields": "Delete",
+      "detail-nights": "Nights: <span> {{ count }} </span>",
+      "detail-guests": "Guests: <span> {{ count }} </span>",
+      "detail-amount": "Total amount to be paid: <span> {{ count }} грн</span>",
+      "switch-create": "Create",
+      "switch-list": "From the list",
+      "add-guest": "Add guest",
+      "guest-list": "Guest from the list",
+      "guest-count-error": "The specified quantity exceeds the capacity",
+      "success-create": "Reservation created",
+      "guest-recieve-message": "Want to mark it as confirmed right away? The guest will receive a message about the successful booking.",
+      "booking-status": "You can view further status and details in the booking section.",
+      "approve": "Confirm the reservation",
+      "skip-approve": "Leave unconfirmed",
+      "cancellation-title": "Are you sure you want to cancel the booking process?",
+      "cancellation": "Cancel booking",
+      "cancellation-continue": "Continue creating",
+      "max": "{{ count }}",
+      "fiat": "uah"
+    },
+    "blocked": {
+      "title": "Blocked dates",
+      "comment": "Blocking reason",
+      "check-in": "Start date",
+      "check-out": "End date",
+      "button-title": "Block dates",
+      "decline": "Cancel",
+      "block-title": "Booking Details",
+      "edit-booking": "Edit",
+      "edit-block-booking": "Edit block",
+      "block-desc-title": "Another",
+      "edit-block-dates": "Dates of blocking",
+      "edit-use-changes": "Save changes",
+      "edit-decline-changes": "Decline",
+      "start-date": "Start date",
+      "end-date": "End date",
+      "block-cause": "Blocking reason",
+      "title-cancellation-block": "Are you sure you want to unblock?",
+      "cancellation-block": "Unblock",
+      "cancellation-continue": "Continue"
+    },
+    "view": {
+      "title": "Booking",
+      "detail-title": "Booking details",
+      "approve": "Approve",
+      "decline": "Decline",
+      "check-in": "Check-in",
+      "check-out": "Check-out",
+      "single-night": "{{ count }} night",
+      "multiple-less-nights": "{{ count }} nights",
+      "multiple-nights": "{{ count }} nights",
+      "amount-booking": "Amount",
+      "guests": "Guests",
+      "edit": "Edit",
+      "approved": "Approved",
+      "pending": "Pending",
+      "rejected": "Rejected",
+      "canceled": "Canceled",
+      "history": "History",
+      "fiat": "uah",
+      "single-guest": "guest",
+      "multiple-guests": "guests"
+    },
+    "action-btn": {
+      "title": "Ok, what are we doing?",
+      "create": "Create a reservation",
+      "block": "Block dates"
+    },
+    "approve": {
+      "title": "Are you sure you want to confirm the booking?",
+      "recieve-message": "The guest will receive a message about the successful booking.",
+      "status-message": "You can view further status and details in the booking section.",
+      "approve": "Approve booking",
+      "decline": "Return back"
+    },
+    "decline-modal": {
+      "title": "Are you sure you want to cancel the booking?",
+      "recieve-message": "The guest will receive a message about the cancellation of the booking.",
+      "status-message": "You can view further status and details in the booking section.",
+      "approve": "Cancel booking",
+      "decline": "Return back"
+    },
+    "edit": {
+      "title": "Edit booking",
+      "date-title": "Check-in and check-out dates",
+      "guest-title": "Number of guests",
+      "create": "Save changes",
+      "decline": "Decline",
+      "reject-booking": "Reject booking",
+      "canceled-booking-title": "Are you sure you want to reject the booking?",
+      "reject-button": "Reject booking",
+      "date-error": "The specified quantity exceeds the capacity",
+      "max": "{{ count }}",
+      "fiat": "uah"
+    },
+    "history": {
+      "approved": "Booking approved",
+      "rejected": "Booking rejected",
+      "canceled": "Booking canceled",
+      "created": "Booking created"
+    }
+  },
+  "guests": {
+    "title": "Guests",
+    "empty-content": "Sorry, the list is empty... \n Start looking for clients right now!"
+  },
+  "create-guests": {
+    "title": "Create a guest",
+    "description": "Contact Information",
+    "name-label": "Name ",
+    "name-placeholder": "Name",
+    "phone-label": "Phone",
+    "phone-placeholder": "Phone",
+    "email-label": "Email",
+    "email-placeholder": "Email",
+    "comment-label": "Comment",
+    "comment-placeholder": "Comment",
+    "create-btn": "Create guest",
+    "decline": "Decline",
+    "success-create": "Guest created successfully",
+    "check": "Check",
+    "list": "List",
+    "decline-title": "Are you sure you want to cancel the creation of the guest?",
+    "descline-btn": "Yes, cancel",
+    "decline-cancel": "No, don't cancel"
+  },
+  "edit-guests": {
+    "title": "Edit guest",
+    "description": "Contact Information",
+    "name-label": "Name",
+    "name-placeholder": "Name",
+    "phone-label": "Phone",
+    "phone-placeholder": "Phone",
+    "email-label": "Email",
+    "email-placeholder": "Email",
+    "comment-label": "Comment",
+    "comment-placeholder": "Comment",
+    "create-btn": "Save changes",
+    "decline": "Decline",
+    "success-create": "Guest updated successfully",
+    "check": "Check",
+    "list": "List",
+    "decline-title": "Are you sure you want to cancel the update of the guest?",
+    "descline-btn": "Yes, cancel",
+    "decline-cancel": "No, don't cancel"
+  },
+  "view-guests": {
+    "title": "Guest's Profile",
+    "phone": "Phone",
+    "email": "E-mail",
+    "comment": "Comment",
+    "edit": "Edit",
+    "count-guests": "Number of guests",
+    "amount": "Amount",
+    "history": {
+      "title": "Booking history",
+      "guests-count": "Guests",
+      "total-amount": "Amount",
+      "fiat": "uah",
+      "details": "Details"
+    }
+  },
+  "calendar": {
+    "selection-modal": {
+      "title": "Calendar"
+    },
+    "modal-title": "Calendar Type",
+    "modal-month": "Monthly",
+    "modal-list": "List",
+    "list": {
+      "event": {
+        "single-guest": "{{ count }} guest",
+        "multiple-guests": "{{ count }} guests",
+        "single-night": "{{ count }} night",
+        "multiple-less-nights": "{{ count }} nights",
+        "multiple-nights": "{{ count }} nights",
+        "amount": "{{ count }} UAH"
+      }
+    },
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    }
+  }
+}

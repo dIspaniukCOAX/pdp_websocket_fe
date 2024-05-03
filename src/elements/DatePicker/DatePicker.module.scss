@@ -1,0 +1,40 @@
+.host-date-picker {
+  width: 100%;
+  padding: 13px 13px;
+
+  border-radius: 8px;
+  border: 1px solid var(--host-grey-30);
+
+}
+
+:global {
+  .ant-picker-month-btn::first-letter {
+    text-transform: uppercase;
+  }
+
+  .ant-picker-input {
+    flex-direction: row-reverse;
+  }
+
+  .ant-picker .ant-picker-input input {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .ant-picker .ant-picker-input svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ant-picker-content th::first-letter {
+    text-transform: uppercase;
+  }
+
+  .ant-picker-month-panel .ant-picker-cell-inner {
+    width: auto !important;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

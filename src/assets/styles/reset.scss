@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Red Hat Text', sans-serif;
   border: 0;
   background: none;
 }
@@ -15,15 +14,21 @@
 }
 
 *:focus,
-*:active { outline: none; }
+*:active {
+  outline: none;
+}
 
 a:focus,
-a:active { outline: none; }
+a:active {
+  outline: none;
+}
 
 nav,
 footer,
 header,
-aside { display: block; }
+aside {
+  display: block;
+}
 
 html,
 body {
@@ -39,10 +44,22 @@ body {
 
 input,
 button,
-textarea { font-family: inherit; }
+textarea {
+  font-family: inherit;
+}
 
-input::-ms-clear { display: none; }
-button { cursor: pointer; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
 
 button::-moz-focus-inner {
   padding: 0;
@@ -50,14 +67,19 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 a,
 a:visited {
   text-decoration: none;
 }
-a:hover { text-decoration: none; }
-ul li { list-style: none; }
-img { vertical-align: top; }
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
 
 h1,
 h2,

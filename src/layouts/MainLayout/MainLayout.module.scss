@@ -1,0 +1,40 @@
+.main-wrapper {
+  overflow: scroll;
+
+  background-color: var(--host-grey-5);
+  position: relative;
+}
+
+.content {
+  padding-bottom: 0;
+
+  border-radius: 20px;
+}
+
+.action-button {
+  z-index: 99;
+  position: fixed;
+  cursor: pointer;
+  bottom: 87px;
+  right: 20px;
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background-color: var(--host-blue-80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    & path {
+      fill: var(--host-white);
+    }
+  }
+}

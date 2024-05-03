@@ -1,0 +1,53 @@
+.sider {
+  background-color: transparent !important;
+  padding-right: 31px;
+
+  &-menu {
+    background-color: transparent;
+    border-inline-end: none !important;
+  }
+
+  :global {
+    .ant-menu-item {
+      padding: 0 !important;
+      background-color: transparent !important;
+    }
+
+    .ant-menu-title-content {
+      font-family: var(--host-primary-font);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      color: var(--host-grey-80);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ant-menu-item-selected .ant-menu-title-content {
+      color: var(--host-dark-80);
+    }
+  }
+
+  .menu-item-count {
+    margin-left: 16px;
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+    background: var(--host-red-30);
+
+    color: var(--host-white);
+
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px;
+  }
+}

@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  height: 50px;
+  padding: 4px 13px;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+
+  border-bottom: 1px solid var(--host-grey-10);
+  background: var(--host-white);
+
+  @media(max-width: 768px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .logo-header {
+    width: 35px;
+  }
+
+  .input-header {
+    width: 500px;
+    margin-left: 30px;
+  }
+
+  .dropDown {
+    margin-left: auto;
+  }
+  &__navigation-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.navigation-icon {
+  &__container {
+    display: flex;
+    padding: 8px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 6px;
+    background: var(--host-grey-5);
+    & .logo-header {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__title {
+    color: var(--host-dark-70);
+    font-family: var(--host-primary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

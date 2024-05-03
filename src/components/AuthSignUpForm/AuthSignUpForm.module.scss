@@ -1,0 +1,32 @@
+.sign-up-form {
+  padding-top: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  .sign-up-inputs-wrapper {
+    margin-bottom: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.conditionLink {
+  color: var(--host-blue-80);
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.conditionContent {
+  margin-top: 8px;
+}
+
+.sign-up-btn {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.error-message {
+  color: var(--host-red-10);
+}

@@ -1,0 +1,39 @@
+.host-form-item {
+  margin-bottom: 0;
+
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+
+    .ant-input-affix-wrapper-status-error {
+      border: 1px solid var(--host-red-50) !important;
+    }
+
+    .ant-form-item-required {
+      flex-direction: row-reverse;
+    }
+
+    .ant-form-item-required::after {
+      content: none !important;
+    }
+
+    .ant-form-item-required::before {
+      margin-inline-start: 5px;
+      margin-inline-end: 0px;
+      font-family: var(--host-primary-font) !important;
+    }
+
+    .ant-form-item-label {
+      padding-bottom: 6px !important;
+    }
+
+    .ant-form-item-label label {
+      color: var(--host-grey-85);
+    }
+
+    .ant-form-item-explain-error {
+      font-size: 12px !important;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.checkboxes {
+  align-items: center;
+}
+
+.checkboxes span {
+  color: var(--host-grey-80);
+}
+
+:global(.ant-checkbox-inner) {
+  width: 25px !important;
+  height: 25px !important;
+
+  border-color: #e7e7e7 !important;
+  border-radius: 5px !important;
+}
+
+:global(.ant-checkbox-inner::after) {
+  inset-inline-start: 33.5% !important;
+}

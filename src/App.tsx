@@ -1,13 +1,17 @@
-// components
-import Router from "./pages/Router";
+import { FC } from "react";
 
+import { withProviders } from "@/providers";
 
-function App() {
+import { AppRouter } from "@/pages";
+
+import styles from "./App.module.scss";
+
+const App: FC = () => {
   return (
-    <div className="App" data-testid="react-root-component">
-      <Router/>
+    <div className={styles.App} data-testid="react-root-component">
+      <AppRouter />
     </div>
   );
-}
+};
 
-export default App;
+export default withProviders(App);

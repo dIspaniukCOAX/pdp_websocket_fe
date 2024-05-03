@@ -1,0 +1,30 @@
+.host-dropdown-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  font-size: 14px;
+  font-weight: 450;
+
+  margin-left: auto;
+  padding: 4px 7px;
+
+  border: none;
+  background-color: transparent;
+
+  box-shadow: none;
+
+  color: black;
+
+  &:hover,
+  :focus {
+    background-color: var(--host-grey-30) !important;
+    border-radius: 4px !important;
+    color: black !important;
+  }
+}
+
+:global(.ant-dropdown-menu-item) {
+  padding: 5px 6px !important;
+}

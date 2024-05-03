@@ -1,0 +1,23 @@
+.sign-in-form {
+  max-width: 500px;
+  width: 100%;
+  padding-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+
+  .sign-in-inputs-wrapper {
+    margin-bottom: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .forgot-password {
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+    line-height: 32px;
+  }
+}

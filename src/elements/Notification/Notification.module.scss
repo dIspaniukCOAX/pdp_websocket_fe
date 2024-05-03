@@ -1,0 +1,31 @@
+.notification {
+  padding: 8px !important;
+
+  :global {
+    .ant-notification {
+      z-index: 1090;
+    }
+
+    .ant-notification-notice-message {
+      margin: 0 0 0 28px !important;
+
+      font-family: var(--host-primary-font);
+      font-size: 14px !important;
+      line-height: 22px;
+    }
+
+    .ant-notification-notice-close {
+      right: 6px !important;
+      top: 8px !important;
+    }
+
+    .anticon {
+      margin-top: 3px;
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}

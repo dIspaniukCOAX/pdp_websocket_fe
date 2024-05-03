@@ -1,0 +1,50 @@
+:global {
+  .ant-input {
+    padding: 11px;
+    font-size: 16px;
+
+    color: var(--host-dark-60);
+    background-color: var(--host-white);
+  }
+  .ant-input-password {
+    & svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.host-inp-phone {
+  height: 50px;
+  width: 100%;
+  padding: 11px;
+  font-size: 16px;
+
+  border-radius: 5px;
+  border: 1px solid var(--host-grey-30);
+
+  background-color: var(--host-white);
+}
+
+.host-inp-password,
+.host-inp-default,
+.host-inp-def,
+.host-inp-number {
+  padding: 12px;
+  font-size: 16px;
+
+  border-radius: 5px;
+  border: 1px solid var(--host-grey-30);
+
+  background-color: var(--host-white);
+}
+
+.host-inp-validate,
+.host-inp-validate:hover,
+.host-inp-validate:focus {
+  border-color: var(--host-green-80);
+}
+
+.host-inp-hidden {
+  display: none;
+}

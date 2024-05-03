@@ -1,13 +1,14 @@
 import { render } from "@testing-library/react";
 
-// components
-import App from "../App";
+import "@testing-library/jest-dom";
+import "./utils/matchMedia";
+import App from "@/App";
 
-
-describe("tests for the App component", () => {
-  it("should render the App component", () => {
+describe("App component", () => {
+  test("renders App component", () => {
     const { getByTestId } = render(<App />);
+    const appComponent = getByTestId("react-root-component");
 
-    expect(getByTestId("react-root-component")).toBeInTheDocument();
+    expect(appComponent).toBeInTheDocument();
   });
 });

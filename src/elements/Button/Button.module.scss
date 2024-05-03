@@ -1,0 +1,78 @@
+.fullWidth {
+  width: 100%;
+}
+
+.host-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border-width: 2px;
+
+  &__large {
+    height: 50px;
+    padding: 8px 60px;
+    font-size: 16px;
+  }
+
+  &__middle {
+    height: 40px;
+    padding: 8px 40px;
+    font-size: 14px;
+  }
+
+  &__small {
+    height: 30px;
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+
+  &__primary {
+    border: 2px solid var(--host-blue-60);
+    color: var(--host-white);
+    background-color: var(--host-blue-80);
+
+    &.danger {
+      background-color: var(--host-red-20);
+      border-color: var(--host-ui-error-50);
+    }
+  }
+
+  &__icon {
+    border: none;
+    background-color: none;
+    min-width: auto;
+    box-shadow: none;
+
+    & > div {
+      display: none;
+    }
+  }
+
+  &__ghost {
+    color: var(--host-dark-90);
+
+    border: 2px solid var(--host-grey-60);
+    background: var(--host-white);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.btn-with-icon {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  gap: 7px;
+
+  span {
+    margin: 0 !important;
+  }
+}

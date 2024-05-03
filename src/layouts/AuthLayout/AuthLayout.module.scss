@@ -1,0 +1,128 @@
+.auth-wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 32px 16px 107px 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--host-grey-5);
+}
+
+.auth-wrapper-footer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  margin-top: 150px;
+}
+
+.auth-wrapper-footer-title {
+  color: var(--host-grey-70);
+}
+
+.auth-wrapper-footer-none {
+  display: none;
+}
+
+.logo-img {
+  display: block;
+  max-width: 100px;
+}
+
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  margin-top: 24px;
+  padding: 20px 16px;
+
+  border-radius: 20px;
+  box-shadow: 0px 3px 1px 0px rgba(128, 128, 128, 0.05);
+
+  background-color: var(--host-white);
+}
+
+.form-registration {
+  height: 700px;
+}
+
+.form-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-form-header {
+  font-size: 24px !important;
+  line-height: normal !important;
+  color: var(--host-dark-90) !important;
+  font-family: var(--host-title-font);
+}
+
+.link-form {
+  font-family: Inter;
+  color: var(--host-blue-40);
+
+  font-size: 14px;
+}
+
+.form-container-auth-google {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 16px;
+}
+
+.form-auth-google-title {
+  font-weight: 400 !important;
+
+  color: var(--host-grey-80) !important;
+}
+
+.steps {
+  margin-bottom: 24px;
+
+  & :global(.ant-steps-item-container) {
+    display: flex;
+    flex-direction: column;
+    &:nth-child(2) {
+      align-items: center;
+    }
+  }
+
+  & :global(.ant-steps-item-process) {
+    & :global(.ant-steps-item-icon) {
+      background-color: var(--host-blue-40);
+      border-color: var(--host-blue-40);
+    }
+  }
+
+  & :global(.ant-steps-icon) {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  & :global(.ant-steps-item-title){
+    line-height: 16px !important;
+    font-size: 12px !important;
+
+    &::after{
+      top: 8px !important;
+    }
+  }
+
+  & :global {
+    .ant-steps-item-icon{
+      max-height: 16px;
+      max-width: 16px;
+      line-height: 12px !important;
+    }
+    .ant-steps-item.ant-steps-item-wait .ant-steps-item-icon span.ant-steps-icon {
+      color: var(--host-dark-100);
+    }
+  }
+}
