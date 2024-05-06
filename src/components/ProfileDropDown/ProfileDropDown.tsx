@@ -71,8 +71,8 @@ export const ProfileDropDown: FC = () => {
         items: [
           {
             key: 1,
-            onClick: () => navigate("/settings"),
-            label: renderItem("settings", t("layout-pages.settings"))
+            onClick: () => navigate("/profile"),
+            label: renderItem("users", t("layout-pages.profile"))
           },
           { key: 2, onClick: logout, label: renderItem("exit", t("layout-pages.exit")) }
         ]

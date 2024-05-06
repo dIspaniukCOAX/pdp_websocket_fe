@@ -16,7 +16,7 @@ interface ISidebarMenuItem extends Omit<MenuItemType, "key"> {
   count?: number;
 }
 
-const { DASHBOARD, BOOKINGS, GUESTS, REPORTS } = ROUTES;
+const { DASHBOARD } = ROUTES;
 
 export const SidebarMenu = () => {
   const { t } = useTranslation();
@@ -30,9 +30,6 @@ export const SidebarMenu = () => {
 
   const items: ISidebarMenuItem[] = [
     { key: DASHBOARD, count: 5 },
-    { key: BOOKINGS },
-    { key: GUESTS, count: 15 },
-    { key: REPORTS }
   ];
 
   const key = items.find(({ key }) => pathname.includes(key))?.key;

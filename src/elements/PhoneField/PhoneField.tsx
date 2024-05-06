@@ -10,9 +10,10 @@ interface AntPhoneProps {
   value: string | null;
   onChange: (phone: string) => void;
   placeholder?: string;
+  disabled?: boolean;
 }
 
-export const AntPhone: React.FC<AntPhoneProps> = ({ value, onChange, placeholder }) => {
+export const AntPhone: React.FC<AntPhoneProps> = ({ value, onChange, placeholder, disabled }) => {
   const phoneInput = usePhoneInput({
     defaultCountry: "ua",
     value: value || "",
@@ -34,6 +35,7 @@ export const AntPhone: React.FC<AntPhoneProps> = ({ value, onChange, placeholder
     <div className={styles.phone__container}>
       <Space.Compact>
         <CountrySelector
+        disabled={disabled}
           selectedCountry={phoneInput.country.iso2}
           onSelect={(country) => phoneInput.setCountry(country.iso2)}
           renderButtonWrapper={({ children, rootProps }) => (
@@ -55,6 +57,7 @@ export const AntPhone: React.FC<AntPhoneProps> = ({ value, onChange, placeholder
           }}
         />
         <Input
+          disabled={disabled}
           placeholder={placeholder}
           type="tel"
           value={phoneInput.phone}

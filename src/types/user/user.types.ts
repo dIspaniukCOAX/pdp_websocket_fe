@@ -5,4 +5,5 @@ export interface IUser extends Record<string, unknown> {
   email: string;
   phoneNumber: string;
   fullName: string;
+  balance: number;
 }

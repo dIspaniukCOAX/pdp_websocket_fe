@@ -16,6 +16,7 @@ export const Input: FC<IInputProps & TextAreaProps> = ({
   value,
   hidden,
   onChange,
+  disabled,
   ...rest
 }) => {
   const inputClassName = classNames(styles[`host-inp-${type}`], className, {
@@ -39,6 +40,7 @@ export const Input: FC<IInputProps & TextAreaProps> = ({
       <AntPhone
         value={value as string}
         onChange={handleOnAccept}
+        disabled={disabled}
         {...restProps}
       />
     );
@@ -46,13 +48,14 @@ export const Input: FC<IInputProps & TextAreaProps> = ({
 
   if (type === "password") {
     return (
-      <AntdInput.Password className={inputClassName} value={value} onChange={onChange} {...rest} />
+      <AntdInput.Password disabled={disabled} className={inputClassName} value={value} onChange={onChange} {...rest} />
     );
   }
 
   if (type === "number") {
     return (
       <AntdInput
+        disabled={disabled}
         className={inputClassName}
         value={value}
         onChange={onChange}
@@ -64,8 +67,8 @@ export const Input: FC<IInputProps & TextAreaProps> = ({
   }
 
   if (type === "textarea") {
-    return <AntdInput.TextArea className={inputClassName} value={value} {...rest} />;
+    return <AntdInput.TextArea disabled={disabled} className={inputClassName} value={value} {...rest} />;
   }
 
-  return <AntdInput className={inputClassName} onChange={onChange} value={value} {...rest} />;
+  return <AntdInput disabled={disabled} className={inputClassName} onChange={onChange} value={value} {...rest} />;
 };

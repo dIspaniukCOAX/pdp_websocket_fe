@@ -8,11 +8,20 @@ import { Icon } from "@/elements";
 
 import styles from "./MainLayoutHeader.module.scss";
 
+import { RootState } from "@/store";
+
 const { Link } = Typography;
 const { Header } = Layout;
 
 export const MainLayoutHeader: FC = () => {
-  const header = useSelector((state: any) => state.header);
+  const header = useSelector((state: RootState) => state.header);
+  const user = useSelector((state: RootState) => state.user.main);
+
+  const balanceValue = useMemo(() => {
+    const convertToFloat = parseFloat(String((user?.balance || 0) / 100) || "0");
+    
+return convertToFloat.toFixed(2);
+  }, [user])
 
   const isNavigation = header.navigation.title;
 
@@ -36,7 +45,12 @@ export const MainLayoutHeader: FC = () => {
     <Header className={styles.header}>
       {handleNavigation}
 
-      <ProfileDropDown />
+      <div className={styles.content}>
+        <p className={styles.balance}>
+          Balance: {balanceValue}₴
+        </p>
+        <ProfileDropDown />
+      </div>
     </Header>
   );
 };

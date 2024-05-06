@@ -1,4 +1,7 @@
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
   display: flex;
   height: 50px;
   padding: 4px 13px;
@@ -61,4 +64,16 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+}
+
+.content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.balance {
+  font-size: 14px;
+  font-family: var(--host-primary-font);
+  color: var(--host-dark-70);
 }

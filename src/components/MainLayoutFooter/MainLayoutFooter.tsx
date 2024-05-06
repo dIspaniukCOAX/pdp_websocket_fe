@@ -11,7 +11,7 @@ import styles from "./MainLayoutFooter.module.scss";
 
 const { Link } = Typography;
 
-const { DASHBOARD, BOOKINGS, GUESTS, SETTINGS } = ROUTES
+const { DASHBOARD } = ROUTES
 
 export const MainLayoutFooter = () => {
   const { pathname } = useLocation();
@@ -35,15 +35,6 @@ export const MainLayoutFooter = () => {
         <Link href={DASHBOARD} className={handleIsActiveTab("dashboard")}>
           <Icon icon="map" className={styles["navigation-item__icon"]} />
           <span className={styles["navigation-item__text"]}>{t("navigation.calendar")}</span>
-        </Link>
-        <Link href={BOOKINGS} className={handleIsActiveTab("booking")}>
-          <span className={styles["navigation-item__text"]}> {t("navigation.bookings")} </span>
-        </Link>
-        <Link href={GUESTS} className={handleIsActiveTab("guests")}>
-          <span className={styles["navigation-item__text"]}> {t("navigation.guests")} </span>
-        </Link>
-        <Link href={SETTINGS} className={handleIsActiveTab("settings")}>
-          <span className={styles["navigation-item__text"]}> {t("navigation.settings")} </span>
         </Link>
       </div>
     </div>

@@ -7,9 +7,5 @@ export const ROUTES = {
   SET_NEW_PASSWORD: "/:token/set-new-password",
   HOTEL_SETUP: "/hotel-setup",
   DASHBOARD: "/dashboard",
-  SETTINGS: "/settings",
-  BOOKINGS: "/bookings",
-  GUESTS: "/guests",
-  REPORTS: "/reports",
-  PRICE_SETUP: "price-setup",
+  PROFILE: "/profile",
 } as const;

@@ -12,16 +12,6 @@ export enum SortOrderValues {
     DESC = "DESC",
 }
 
-export enum BookingStatus {
-    PENDING = "pending",
-    REJECTED = "rejected",
-    APPROVED = "approved",
-    CANCELED = "canceled",
-    BLOCKED = "blocked",
-    CREATED = "created",
-    UDPATED = "updated",
-}
-
 export enum SegmentTypes {
     LIST = "list",
     CREATE = "create",
