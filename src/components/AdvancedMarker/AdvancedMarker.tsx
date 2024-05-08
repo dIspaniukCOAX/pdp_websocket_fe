@@ -17,7 +17,7 @@ import styles from "./AdvancedMarker.module.scss";
 import { ModalBikeRent } from "../ModalBikeRent/ModalBikeRent";
 
 import { RootState } from "@/store";
-import { setHandleShowModal } from "@/store/payment/payment.slice";
+import { setActiveBike, setHandleShowModal } from "@/store/payment/payment.slice";
 
 export const CustomAdvancedMarker = ({
   bike,
@@ -35,6 +35,7 @@ export const CustomAdvancedMarker = ({
   const isShowModal = useSelector((state: RootState) => state.payment.isShowModal);
 
   const handleToggleModal = () => {
+    dispatch(setActiveBike(bike))
     dispatch(setHandleShowModal(!isShowModal));
   };
 
@@ -65,7 +66,7 @@ export const CustomAdvancedMarker = ({
             <img className={styles.image} src={ElectricBike} alt="Electric bike" />
             <p>Model: {bike.model}</p>
             <p>Price per hour: {bike.rentalPricePerHour} ₴</p>
-            <Button onClick={handleToggleModal} type="primary" className={styles.button}>
+            <Button disabled={!bike.available} onClick={handleToggleModal} type="primary" className={styles.button}>
               Rent bike
             </Button>
           </div>
@@ -73,7 +74,7 @@ export const CustomAdvancedMarker = ({
       )}
       {isShowModal && (
         <Modal footer={null} centered open={isShowModal} onCancel={handleToggleModal}>
-          <ModalBikeRent bikeData={bike} />
+          <ModalBikeRent onCancel={handleToggleModal} />
         </Modal>
       )}
     </>

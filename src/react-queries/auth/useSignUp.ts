@@ -1,3 +1,4 @@
+import { useQueryClient } from "react-query";
 import { useNavigate } from "react-router-dom";
 
 import { useCustomMutation } from "@/hooks";
@@ -22,11 +23,14 @@ const { INDEX } = ROUTES;
 
 export const useSignUp = (options?: TMutationsOptions<IAuthResponse, ISignUp>) => {
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
 
   const { mutate, ...rest } = useCustomMutation<IAuthResponse, ISignUp>(fetcher, {
     ...options,
-    onSuccess: (data, ...args) => {
+    onSuccess: async (data, ...args) => {
       options?.onSuccess?.(data, ...args);
+
+      await queryClient.invalidateQueries(["current-user"], { exact: false });
 
       const redirectPath = INDEX;
       navigate(redirectPath, { replace: true });

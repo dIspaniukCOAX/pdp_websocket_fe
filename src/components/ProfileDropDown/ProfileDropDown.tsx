@@ -19,7 +19,7 @@ import { IUser } from "@/types";
 
 import styles from "./ProfileDropDown.module.scss";
 
-import { setUserInformation } from "@/store/user/user.slice";
+import { clearUserInfo, setUserInformation } from "@/store/user/user.slice";
 
 const { AUTH, SIGN_IN } = ROUTES;
 
@@ -34,6 +34,7 @@ export const ProfileDropDown: FC = () => {
   const logout = () => {
     removeJWTToken();
     queryClient.clear();
+    dispatch(clearUserInfo());
     navigate(`${AUTH}${SIGN_IN}`);
   };
 

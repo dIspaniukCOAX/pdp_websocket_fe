@@ -48,7 +48,11 @@ export default function PaymentForm() {
   const stripe = useStripe();
   const elements = useElements();
 
-  const { mutate: handlePayment } = usePaymentSend();
+  const { mutate: handlePayment } = usePaymentSend({
+    onSuccess: () => {
+      window.location.reload();
+    }
+  });
 
   const handleSubmit = async (values: IPayment) => {
     if (!stripe || !elements) {

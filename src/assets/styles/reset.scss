@@ -97,3 +97,7 @@ p {
   font-size: inherit;
   font-weight: inherit;
 }
+
+.ant-modal-root .ant-modal-mask {
+  background: #00000020 !important;
+}
