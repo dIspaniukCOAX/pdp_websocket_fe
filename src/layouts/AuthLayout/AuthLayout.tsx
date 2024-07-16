@@ -38,7 +38,7 @@ export const AuthLayout: FC<IAuthProps> = ({ children }) => {
 
   return (
     <div className={styles["auth-wrapper"]}>
-      <img className={styles["logo-img"]} src={Logo} alt="HOSTY" />
+      <img className={styles["logo-img"]} src={Logo} alt="logo" />
 
       <div className={styles["form-container"]}>
         <div className={styles["form-container-header"]}>

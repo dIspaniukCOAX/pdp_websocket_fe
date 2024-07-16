@@ -9,7 +9,7 @@
     padding: 0px 8px;
     justify-content: center;
     align-items: center;
-    background-color: var(--host-white);
+    background-color: var(--chat-white);
     gap: 8px;
   }
 }
@@ -29,23 +29,23 @@
     &.active-guests {
       & .navigation-item__icon {
         & path {
-          stroke: var(--host-blue-40);
-          fill: var(--host-blue-40);
+          stroke: var(--chat-blue-40);
+          fill: var(--chat-blue-40);
         }
       }
       & .navigation-item__text {
-        color: var(--host-blue-40);
+        color: var(--chat-blue-40);
       }
     }
 
     &.active {
       & .navigation-item__icon {
         & path {
-          stroke: var(--host-blue-40);
+          stroke: var(--chat-blue-40);
         }
       }
       & .navigation-item__text {
-        color: var(--host-blue-40);
+        color: var(--chat-blue-40);
       }
     }
     &__icon {
@@ -53,13 +53,13 @@
       height: 20px;
       &.default-icon {
         & path {
-          fill: var(--host-grey-50);
+          fill: var(--chat-grey-50);
         }
       }
     }
     &__text {
-      color: var(--host-grey-50);
-      font-family: var(--host-primary-font);
+      color: var(--chat-grey-50);
+      font-family: var(--chat-primary-font);
       font-size: 11px;
       font-weight: 600;
       line-height: normal;

@@ -9,8 +9,8 @@
   justify-content: space-between;
   flex-shrink: 0;
 
-  border-bottom: 1px solid var(--host-grey-10);
-  background: var(--host-white);
+  border-bottom: 1px solid var(--chat-grey-10);
+  background: var(--chat-white);
 
   @media(max-width: 768px) {
     position: fixed;
@@ -45,15 +45,15 @@
     align-items: flex-start;
     gap: 10px;
     border-radius: 6px;
-    background: var(--host-grey-5);
+    background: var(--chat-grey-5);
     & .logo-header {
       width: 16px;
       height: 16px;
     }
   }
   &__title {
-    color: var(--host-dark-70);
-    font-family: var(--host-primary-font);
+    color: var(--chat-dark-70);
+    font-family: var(--chat-primary-font);
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -74,6 +74,6 @@
 
 .balance {
   font-size: 14px;
-  font-family: var(--host-primary-font);
-  color: var(--host-dark-70);
+  font-family: var(--chat-primary-font);
+  color: var(--chat-dark-70);
 }

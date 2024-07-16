@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.host-btn {
+.chat-btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -28,13 +28,13 @@
   }
 
   &__primary {
-    border: 2px solid var(--host-blue-60);
-    color: var(--host-white);
-    background-color: var(--host-blue-80);
+    border: 2px solid var(--chat-blue-60);
+    color: var(--chat-white);
+    background-color: var(--chat-blue-80);
 
     &.danger {
-      background-color: var(--host-red-20);
-      border-color: var(--host-ui-error-50);
+      background-color: var(--chat-red-20);
+      border-color: var(--chat-ui-error-50);
     }
   }
 
@@ -50,10 +50,10 @@
   }
 
   &__ghost {
-    color: var(--host-dark-90);
+    color: var(--chat-dark-90);
 
-    border: 2px solid var(--host-grey-60);
-    background: var(--host-white);
+    border: 2px solid var(--chat-grey-60);
+    background: var(--chat-white);
   }
 
   svg {

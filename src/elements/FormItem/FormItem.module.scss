@@ -1,4 +1,4 @@
-.host-form-item {
+.chat-form-item {
   margin-bottom: 0;
 
   :global {
@@ -7,7 +7,7 @@
     }
 
     .ant-input-affix-wrapper-status-error {
-      border: 1px solid var(--host-red-50) !important;
+      border: 1px solid var(--chat-red-50) !important;
     }
 
     .ant-form-item-required {
@@ -21,7 +21,7 @@
     .ant-form-item-required::before {
       margin-inline-start: 5px;
       margin-inline-end: 0px;
-      font-family: var(--host-primary-font) !important;
+      font-family: var(--chat-primary-font) !important;
     }
 
     .ant-form-item-label {
@@ -29,7 +29,7 @@
     }
 
     .ant-form-item-label label {
-      color: var(--host-grey-85);
+      color: var(--chat-grey-85);
     }
 
     .ant-form-item-explain-error {

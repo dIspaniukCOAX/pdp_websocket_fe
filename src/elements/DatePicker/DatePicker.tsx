@@ -29,7 +29,7 @@ export const DatePicker: FC<DatePickerProps> = ({
           lang: { ...DatePicker?.lang, monthFormat: "MMMM" }
         } as DatePickerProps["locale"]
       }
-      className={classNames(styles["host-date-picker"], className)}
+      className={classNames(styles["chat-date-picker"], className)}
       format={format}
       {...rest}
     />

@@ -19,11 +19,11 @@ export const Input: FC<IInputProps & TextAreaProps> = ({
   disabled,
   ...rest
 }) => {
-  const inputClassName = classNames(styles[`host-inp-${type}`], className, {
-    [styles["host-inp-def"]]: !type,
-    [styles["host-inp-validate"]]: validated === true,
-    [styles["host-inp-number"]]: type === "number",
-    [styles["host-inp-hidden"]]: hidden
+  const inputClassName = classNames(styles[`chat-inp-${type}`], className, {
+    [styles["chat-inp-def"]]: !type,
+    [styles["chat-inp-validate"]]: validated === true,
+    [styles["chat-inp-number"]]: type === "number",
+    [styles["chat-inp-hidden"]]: hidden
   });
 
   if (type === "phone") {

@@ -24,9 +24,9 @@ export const Button: FC<IButtonProps> = ({
   const navigate = useNavigate();
 
   const btnClassName = classNames(
-    styles["host-btn"],
-    styles[`host-btn__${size}`],
-    styles[`host-btn__${type}`],
+    styles["chat-btn"],
+    styles[`chat-btn__${size}`],
+    styles[`chat-btn__${type}`],
     className,
     {
       [styles.danger]: danger,

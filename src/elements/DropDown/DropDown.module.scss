@@ -1,4 +1,4 @@
-.host-dropdown-button {
+.chat-dropdown-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@
 
   &:hover,
   :focus {
-    background-color: var(--host-grey-30) !important;
+    background-color: var(--chat-grey-30) !important;
     border-radius: 4px !important;
     color: black !important;
   }

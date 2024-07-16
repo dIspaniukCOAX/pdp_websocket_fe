@@ -7,7 +7,7 @@ import { ICheckValidationToken, TMutationsOptions } from "@/types";
 const fetcher = async (body: ICheckValidationToken) => {
   const { token } = body;
 
-  return api.post(`/host/auth/resend-forgot-password/${token}`);
+  return api.post(`/chat/auth/resend-forgot-password/${token}`);
 };
 
 export const useRequestNewLink = (

@@ -1,13 +1,13 @@
 .title-1,
 .title-2,
 .title-5 {
-  font-family: var(--host-title-font);
+  font-family: var(--chat-title-font);
 }
 
 .title-3,
 .title-4,
 .title-6 {
-  font-family: var(--host-primary-font);
+  font-family: var(--chat-primary-font);
 }
 
 .title-3,
@@ -22,7 +22,7 @@
 }
 
 .title {
-  color: var(--host-dark-80) !important;
+  color: var(--chat-dark-80) !important;
   margin: 0 !important;
 }
 

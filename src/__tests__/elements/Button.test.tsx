@@ -15,7 +15,7 @@ describe("Button component", () => {
     {
       label: "Button with default props",
       props: { onClick: onClickMock },
-      expectedClasses: ["host-btn__middle"]
+      expectedClasses: ["chat-btn__middle"]
     },
     {
       label: "Button with specified props",
@@ -29,9 +29,9 @@ describe("Button component", () => {
         onClick: onClickMock
       },
       expectedClasses: [
-        "host-btn",
-        "host-btn__large",
-        "host-btn__primary",
+        "chat-btn",
+        "chat-btn__large",
+        "chat-btn__primary",
         "danger",
         "btn-with-icon",
         "reverse",

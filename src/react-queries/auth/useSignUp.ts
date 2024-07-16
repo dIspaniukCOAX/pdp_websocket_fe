@@ -10,7 +10,7 @@ import { ROUTES } from "@/constants";
 import { IAuthResponse, ISignUp, TMutationsOptions } from "@/types";
 
 const fetcher = async (body: ISignUp) => {
-  const res: IAuthResponse = await api.post("/host/auth/register", body);
+  const res: IAuthResponse = await api.post("/chat/auth/register", body);
 
   const { jwtToken } = res;
 

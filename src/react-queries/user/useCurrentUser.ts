@@ -5,7 +5,7 @@ import { api, getJWTToken } from "@/helpers";
 import { TQueryOptions } from "@/types";
 
 const fetcher = async () => {
-  return api.get("host/user/profile");
+  return api.get("chat/user/profile");
 };
 
 export const useCurrentUser = <TQueryFnData = any, TData = any>(

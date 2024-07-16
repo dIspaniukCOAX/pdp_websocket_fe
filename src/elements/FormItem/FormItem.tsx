@@ -8,7 +8,7 @@ import styles from "./FormItem.module.scss";
 
 export const FormItem: FC<IFormItemProps> = ({ children, className, value, preview, ...rest }) => {
   return (
-    <Form.Item className={classNames(styles["host-form-item"], className)} {...rest}>
+    <Form.Item className={classNames(styles["chat-form-item"], className)} {...rest}>
       {preview ? value || "-" : children}
     </Form.Item>
   );

@@ -9,7 +9,7 @@ import { IResetPassword, TMutationsOptions } from "@/types";
 import { setResetPasswordStatus } from "@/store/auth/auth.slice";
 
 const fetcher = async (body: IResetPassword) => {
-  return api.post("/host/auth/forgot-password", body);
+  return api.post("/chat/auth/forgot-password", body);
 };
 
 export const useResetPassword = (options?: TMutationsOptions<Promise<void>, IResetPassword>) => {

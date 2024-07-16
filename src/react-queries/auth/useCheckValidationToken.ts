@@ -9,7 +9,7 @@ import { TMutationsOptions } from "@/types";
 import { setNewPasswordValid } from "@/store/auth/auth.slice";
 
 const fetcher = async (tokenId: string) => {
-  const res: any = await api.patch(`/host/auth/verify-forgot-token/${tokenId}`);
+  const res: any = await api.patch(`/chat/auth/verify-forgot-token/${tokenId}`);
   
   return res;
 };

@@ -22,18 +22,18 @@ export const AntdProvider = ({ children, ...props }: ConfigProviderProps) => {
       locale={LOCALES[language]}
       theme={{
         token: {
-          fontFamily: "var(--host-primary-font)"
+          fontFamily: "var(--chat-primary-font)"
         },
 
         components: {
           Button: {
             fontWeight: 700,
-            defaultBorderColor: "var(--host-blue-80)",
-            defaultColor: "var(--host-blue-80)",
-            defaultGhostColor: "var(--host-dark-40)",
-            defaultGhostBorderColor: "var(--host-grey-60)",
+            defaultBorderColor: "var(--chat-blue-80)",
+            defaultColor: "var(--chat-blue-80)",
+            defaultGhostColor: "var(--chat-dark-40)",
+            defaultGhostBorderColor: "var(--chat-grey-60)",
             onlyIconSize: 24,
-            fontFamily: "var(--host-primary-font)"
+            fontFamily: "var(--chat-primary-font)"
           },
           Input: {
             paddingInline: 20

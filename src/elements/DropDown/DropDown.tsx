@@ -11,7 +11,7 @@ export const DropDown: FC<DropdownProps> = ({ children, ...rest }) => {
     <Dropdown className={styles.dropDown} {...rest}>
       <Button
         type="link"
-        className={styles["host-dropdown-button"]}
+        className={styles["chat-dropdown-button"]}
         onClick={(e) => e.preventDefault()}
       >
         {children}

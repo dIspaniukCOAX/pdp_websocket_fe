@@ -6,11 +6,11 @@ import classNames from "classnames";
 import styles from "./Drawer.module.scss";
 
 export const Drawer: FC<DrawerProps> = ({ children, className, ...rest }) => {
-  const drawerClassName = classNames(styles["host-drawer"], className);
+  const drawerClassName = classNames(styles["chat-drawer"], className);
 
   return (
     <AntdDrawer className={drawerClassName} {...rest}>
-      <div className={styles["host-drawer-content"]}>{children}</div>
+      <div className={styles["chat-drawer-content"]}>{children}</div>
     </AntdDrawer>
   );
 };

@@ -11,7 +11,7 @@ import { IAuthResponse } from "@/types";
 const { INDEX } = ROUTES;
 
 const fetcher = async (code: string) => {
-  const res: IAuthResponse = await api.post("/host/auth/google", {
+  const res: IAuthResponse = await api.post("/chat/auth/google", {
     authorizationCode: code
   });
 

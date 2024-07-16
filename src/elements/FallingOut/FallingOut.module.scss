@@ -16,13 +16,13 @@
       bottom: 17px;
       width: calc(100% + 40px);
       left: -20px;
-      background-color: var(--host-grey-40);
+      background-color: var(--chat-grey-40);
     }
 
     &-title {
       width: 100%;
-      color: var(--host-dark-70);
-      font-family: var(--host-primary-font);
+      color: var(--chat-dark-70);
+      font-family: var(--chat-primary-font);
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -33,12 +33,12 @@
     }
     &-clear {
       cursor: pointer;
-      font-family: var(--host-primary-font);
+      font-family: var(--chat-primary-font);
       font-size: 14px;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
-      color: var(--host-blue-40);
+      color: var(--chat-blue-40);
     }
   }
   &__wrapper {
@@ -58,7 +58,7 @@
     bottom: 0;
     left: 0;
     min-height: 280px;
-    background-color: var(--host-white);
+    background-color: var(--chat-white);
     display: flex;
     width: 100%;
     padding: 20px;
@@ -73,7 +73,7 @@
   }
   &__title {
     text-align: center;
-    font-family: var(--host-title-font);
+    font-family: var(--chat-title-font);
   }
   &__btns {
     margin-top: 32px;
@@ -83,8 +83,8 @@
     gap: 16px;
     & :global {
       .ant-btn-dangerous {
-        background-color: var(--host-red-10);
-        border-color: var(--host-red-50);
+        background-color: var(--chat-red-10);
+        border-color: var(--chat-red-50);
       }
     }
   }

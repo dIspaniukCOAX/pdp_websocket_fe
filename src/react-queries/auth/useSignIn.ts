@@ -14,7 +14,7 @@ const { INDEX } = ROUTES;
 const fetcher = async (body: ISignIn) => {
   removeJWTToken();
 
-  const res: IAuthResponse = await api.post("/host/auth/login", body);
+  const res: IAuthResponse = await api.post("/chat/auth/login", body);
 
   const { jwtToken } = res;
 

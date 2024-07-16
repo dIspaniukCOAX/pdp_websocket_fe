@@ -11,7 +11,7 @@ import { setNewPasswordStatus } from "@/store/auth/auth.slice";
 const fetcher = async (body: IRequestSetNewPassword) => {
   const { token, ...rest } = body;
 
-  return api.patch(`/host/auth/set-new-password/${token}`, rest);
+  return api.patch(`/chat/auth/set-new-password/${token}`, rest);
 };
 
 export const useSetNewPassword = (

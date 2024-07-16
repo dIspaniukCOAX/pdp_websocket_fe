@@ -1,7 +1,7 @@
 .main-wrapper {
   overflow: scroll;
 
-  background-color: var(--host-grey-5);
+  background-color: var(--chat-grey-5);
   position: relative;
 }
 
@@ -21,7 +21,7 @@
   height: 54px;
   flex-shrink: 0;
   border-radius: 50px;
-  background-color: var(--host-blue-80);
+  background-color: var(--chat-blue-80);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +34,7 @@
     width: 24px;
     height: 24px;
     & path {
-      fill: var(--host-white);
+      fill: var(--chat-white);
     }
   }
 }

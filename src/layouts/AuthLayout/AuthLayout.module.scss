@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
 
-  background-color: var(--host-grey-5);
+  background-color: var(--chat-grey-5);
 }
 
 .auth-wrapper-footer {
@@ -20,7 +20,7 @@
 }
 
 .auth-wrapper-footer-title {
-  color: var(--host-grey-70);
+  color: var(--chat-grey-70);
 }
 
 .auth-wrapper-footer-none {
@@ -41,7 +41,7 @@
   border-radius: 20px;
   box-shadow: 0px 3px 1px 0px rgba(128, 128, 128, 0.05);
 
-  background-color: var(--host-white);
+  background-color: var(--chat-white);
 }
 
 .form-registration {
@@ -57,13 +57,13 @@
 .title-form-header {
   font-size: 24px !important;
   line-height: normal !important;
-  color: var(--host-dark-90) !important;
-  font-family: var(--host-title-font);
+  color: var(--chat-dark-90) !important;
+  font-family: var(--chat-title-font);
 }
 
 .link-form {
   font-family: Inter;
-  color: var(--host-blue-40);
+  color: var(--chat-blue-40);
 
   font-size: 14px;
 }
@@ -80,7 +80,7 @@
 .form-auth-google-title {
   font-weight: 400 !important;
 
-  color: var(--host-grey-80) !important;
+  color: var(--chat-grey-80) !important;
 }
 
 .steps {
@@ -96,8 +96,8 @@
 
   & :global(.ant-steps-item-process) {
     & :global(.ant-steps-item-icon) {
-      background-color: var(--host-blue-40);
-      border-color: var(--host-blue-40);
+      background-color: var(--chat-blue-40);
+      border-color: var(--chat-blue-40);
     }
   }
 
@@ -122,7 +122,7 @@
       line-height: 12px !important;
     }
     .ant-steps-item.ant-steps-item-wait .ant-steps-item-icon span.ant-steps-icon {
-      color: var(--host-dark-100);
+      color: var(--chat-dark-100);
     }
   }
 }
