@@ -11,7 +11,7 @@ import { getJWTToken } from "@/helpers";
 
 import { ROUTES } from "@/constants";
 
-import Logo from "@/assets/icons/bike.svg";
+import Logo from "@/assets/icons/message.svg";
 
 import styles from "./AuthLayout.module.scss";
 

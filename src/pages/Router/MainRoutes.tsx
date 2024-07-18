@@ -5,11 +5,10 @@ import { MainLayout } from "@/layouts";
 
 import { ROUTES } from "@/constants";
 
-import { ActiveRent } from "../ActiveRent/ActiveRent";
 import { Dashboard } from "../Dashboard/Dashboard";
 import { Profile } from "../Profile/Profile";
 
-const { DASHBOARD, PROFILE, ACTIVE_RENT } = ROUTES;
+const { DASHBOARD, PROFILE } = ROUTES;
 
 export const MainRoutes: FC = () => {
   return (
@@ -17,7 +16,6 @@ export const MainRoutes: FC = () => {
       <Routes>
         <Route path={DASHBOARD} element={<Dashboard />} />
         <Route path={PROFILE} element={<Profile />} />
-        <Route path={ACTIVE_RENT} element={<ActiveRent />} />
       </Routes>
     </MainLayout>
   );

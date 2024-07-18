@@ -1,0 +1,14 @@
+.chat-dialog {
+    &__container {
+        flex-grow: 1;
+        background-color: var(--chat-white);
+        height: 100%;
+        width: 100%;
+    }
+    &__message {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        border-bottom: 1px solid var(--chat-grey-40);
+    }
+}

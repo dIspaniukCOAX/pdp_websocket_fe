@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 import authReducer from "./auth/auth.slice";
+import chatReducer from "./chat/chat.slice";
 import footerReducer from "./footer/footer.slice";
 import headerReducer from "./header/header.slice";
-import paymentReducer from "./payment/payment.slice";
 import userReducer from "./user/user.slice";
 
 export const store = configureStore({
@@ -12,7 +12,7 @@ export const store = configureStore({
     header: headerReducer,
     user: userReducer,
     footer: footerReducer,
-    payment: paymentReducer
+    chat: chatReducer
   }
 });
 

@@ -1,30 +1,60 @@
-import React from "react"
-import { useSelector } from "react-redux"
-import { Form } from "antd"
+import React, { useEffect } from "react";
+import { Button, Form } from "antd";
 
-import { FormItem, Input } from "@/elements"
+import { FormItem, Input, Loader } from "@/elements";
 
-import styles from "./ProfileUserView.module.scss"
+import { useCurrentUser } from "@/react-queries";
+import { useUpdateCurrentUser } from "@/react-queries/user/useUpdateCurrentUser";
 
-import { RootState } from "@/store"
+import { useYupSync } from "@/hooks";
+
+import { userSchema } from "./Profile.schema";
+
+import { IUser } from "@/types";
+
+import styles from "./ProfileUserView.module.scss";
 
 export const ProfileUserView = () => {
-    const user = useSelector((state: RootState) => state.user.main)
-    
+  const [form] = Form.useForm();
+  const yupSync = useYupSync(userSchema);
+  const { data: user, isLoading: isUserDataLoading } = useCurrentUser();
+  const { mutate: handleUpdateUserInfo, isLoading: isUpdateUserInfo } = useUpdateCurrentUser();
+
+  const handleSubmit = (values: IUser) => {
+    const objectKeys = Object.keys(values);
+    const sortedData = objectKeys.reduce((acc, key) => {
+      if (values[key] !== user[key]) {
+        acc[key] = values[key];
+      }
+
+      return acc;
+    }, {} as IUser);
+    handleUpdateUserInfo(sortedData);
+  };
+
+  useEffect(() => {
+    form.setFieldsValue(user);
+  }, [user]);
+
+  if (isUserDataLoading || isUpdateUserInfo) {
+    return <Loader isFullScreen />;
+  }
+
   return (
-    <Form
-        layout="vertical"
-        className={styles.container}
-    >
-        <FormItem label="Full name" value="John">
-            <Input value={user?.fullName} disabled/>
-        </FormItem>
-        <FormItem label="Email" value="John">
-            <Input value={user?.email} type="email" disabled/>
-        </FormItem>
-        <FormItem label="Phone Number" value="John">
-            <Input value={user?.phoneNumber} type="phone" disabled/>
-        </FormItem>
+    <Form form={form} onFinish={handleSubmit} layout="vertical" className={styles.container}>
+      <FormItem rules={[yupSync]} name="fullName" label="Full name" value="John">
+        <Input value={user?.fullName} />
+      </FormItem>
+      <FormItem rules={[yupSync]} name="email" label="Email" value="John">
+        <Input value={user?.email} type="email" disabled />
+      </FormItem>
+      <FormItem rules={[yupSync]} name="phoneNumber" label="Phone Number" value="John">
+        <Input value={user?.phoneNumber} type="phone" />
+      </FormItem>
+
+      <Button className={styles.form__button} type="primary" htmlType="submit">
+        Save
+      </Button>
     </Form>
-  )
-}
+  );
+};

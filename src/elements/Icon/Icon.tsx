@@ -11,12 +11,14 @@ import { ReactComponent as Exit } from "@/assets/icons/exit.svg";
 import { ReactComponent as Google } from "@/assets/icons/google.svg";
 import { ReactComponent as Logo } from "@/assets/icons/logo.svg";
 import { ReactComponent as Map } from "@/assets/icons/map.svg";
+import { ReactComponent as Message } from "@/assets/icons/message.svg";
 import { ReactComponent as Users } from "@/assets/icons/outline-users.svg";
 
 
 const ICONS_HASH_MAP: Record<string, React.ComponentType<SVGProps<SVGSVGElement>>> = {
   google: Google,
   bike: Bike,
+  message: Message,
   success: Check,
   decline: Decline,
   emptySearch: EmptySearch,
