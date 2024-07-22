@@ -25,11 +25,12 @@ export const ChatApp = () => {
     if (activeChatWithUser && activeUserId) {
       socket.connect();
       const handleMessage = (data: string) => {
+        console.log("data :>> ", data);
         const message: IChatMessage = JSON.parse(data);
         setMessages((prevMessages) => [...prevMessages, message]);
       };
 
-      socket.emit("joinRoom", { userId: activeUserId, friendId: activeChatWithUser.id });
+      socket.emit("joinRoom", { senderId: activeUserId, receiverId: activeChatWithUser.id });
 
       socket.on("message", handleMessage);
 
@@ -41,6 +42,7 @@ export const ChatApp = () => {
   }, [activeChatWithUser]);
 
   const handleSubmit = (value: IChatMessageForm) => {
+    console.log("value :>> ", value, activeUserId, activeChatWithUser?.id);
     socket.emit(
       "message",
       JSON.stringify({

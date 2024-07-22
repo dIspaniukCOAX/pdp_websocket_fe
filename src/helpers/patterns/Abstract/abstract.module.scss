@@ -1,0 +1,23 @@
+.button {
+  &:global(.ant-btn) {
+    max-width: max-content;
+    width: 100%;
+    height: 40px;
+    background-color: var(--chat-blue-80);
+    color: var(--chat-white);
+    font-family: var(--chat-title-font);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+}

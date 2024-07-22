@@ -1,5 +1,6 @@
 import React, { FC, SVGProps } from "react";
 
+import { ReactComponent as AppleSystem } from "@/assets/icons/apple.svg";
 import { ReactComponent as BankNote } from "@/assets/icons/bank-note.svg";
 import { ReactComponent as Bike } from "@/assets/icons/bike.svg";
 import { ReactComponent as Check } from "@/assets/icons/check-circle.svg";
@@ -13,7 +14,7 @@ import { ReactComponent as Logo } from "@/assets/icons/logo.svg";
 import { ReactComponent as Map } from "@/assets/icons/map.svg";
 import { ReactComponent as Message } from "@/assets/icons/message.svg";
 import { ReactComponent as Users } from "@/assets/icons/outline-users.svg";
-
+import { ReactComponent as WindowSystem } from "@/assets/icons/window.svg";
 
 const ICONS_HASH_MAP: Record<string, React.ComponentType<SVGProps<SVGSVGElement>>> = {
   google: Google,
@@ -28,7 +29,9 @@ const ICONS_HASH_MAP: Record<string, React.ComponentType<SVGProps<SVGSVGElement>
   logo: Logo,
   users: Users,
   exit: Exit,
-  bankNote: BankNote
+  bankNote: BankNote,
+  windowSys: WindowSystem,
+  appleSys: AppleSystem
 };
 
 interface IIconProps extends SVGProps<SVGSVGElement> {

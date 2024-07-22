@@ -18,7 +18,6 @@ export const ChatInput = ({
   handleSubmit: (value: IChatMessageForm) => void
 }) => {
 
-
   return (
     <div className={styles["chat-input__container"]}>
       <Form onFinish={handleSubmit} className={styles["chat-input__form"]} form={form}>

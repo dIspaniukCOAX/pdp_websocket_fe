@@ -11,10 +11,10 @@ export interface IChatMessageForm {
 
 export interface ServerToClientEvents {
     message: (data: string) => void;
-    joinRoom: (data: { userId: number; friendId: number }) => void;
+    joinRoom: (data: { senderId: number; receiverId: number }) => void;
   }
   
   export interface ClientToServerEvents {
     message: (data: string) => void;
-    joinRoom: (data: { userId: number; friendId: number }) => void;
+    joinRoom: (data: { senderId: number; receiverId: number }) => void;
   }
