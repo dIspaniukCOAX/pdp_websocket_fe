@@ -21,7 +21,6 @@ export const ProfileUserView = () => {
   const { mutate: handleUpdateUserInfo, isLoading: isUpdateUserInfo } = useUpdateCurrentUser();
 
   const handleSubmit = (values: IUser) => {
-    console.log("values :>> ", values);
     const objectKeys = Object.keys(values);
     const sortedData = objectKeys.reduce((acc, key) => {
       if (values[key] !== user[key]) {
@@ -30,6 +29,7 @@ export const ProfileUserView = () => {
 
       return acc;
     }, {} as IUser);
+    console.log('sortedData :>> ', sortedData);
     // handleUpdateUserInfo(sortedData);
   };
 
